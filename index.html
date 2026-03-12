@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albarmaja Disce</title>
+    <style>
+        body{
+            margin:30px;
+            background-color: grey;
+        }
+        #karsilama{
+            background-color: black;
+            width: 100%;
+            color: azure;
+            border-radius: 10px;
+            font-size: 30px;
+            box-shadow: 3px 3px 2px 0px;
+        }
+        .kod{
+            background-color: black;
+            color: blue;
+            max-width: 200px;
+            height: 100%;
+            display: inline;
+        }
+        #kd{
+            min-height: 400px;
+            min-width: 100%;
+            max-width: 100%;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="resim1.png">
+</head>
+<body>
+    <center>
+    <h2 id="karsilama">Hoşgeldiniz.</h2>
+    <p id="cikanyazi">Albarmaja Disce ile HTML Öğrenin.Tamamen Ücretsiz ve Açık Kaynak Bir Yazılımdır.</p>
+    <h6>v0.1</h6>
+    </center>
+    <div id="ogrn">
+        <h4>HTML Öğrenme</h4>
+        <p>HTML'in Yapısı Şöyledir:</p>
+        <li class="kod" id="yapi1"></li> <p style="display: inline;">Bu HTML'de kodun durduğu anlamına gelir.</p> <hr>
+        <li class="kod" id="yapi2"></li> <p style="display: inline;">Bu HTML'de Belirtme için kullanılır "" 'ın içine belirtceğin şeyler (örneğin src="https://wikipedia.org/ " gibi).</p>
+        <p>Örneklerde daha iyi kavrarsınız.</p>
+        <h3>HTML'den Bazı Kodlar: </h3>
+<li class="kod" id="kd1"></li> <p style="display: inline;">Bu Kod İle HTML'i Çağırır ve en yeni HTML Versiyonuna Göre kod yazarız.</p> <hr>
+<li class="kod" id="kd2"></li> <p style="display: inline;">Bu kod ile sayfanın görünmeyen kısmını yazarız örneğin burda sayfanın adını yazarız..</p> <hr>
+<li class="kod" id="kd3"></li> <p style="display: inline;">Bu Kod İle sayfanın başlığını atarız head'ın içinde olur.</p> <hr>
+<li class="kod" id="kd4"></li> <p style="display: inline;">Bu Kod İle CSS'i çağırırız.CSS başka bir yazılım dilidir.</p> <hr>
+<li class="kod" id="kd5"></li> <p style="display: inline;">Bu Kod İle Sayfanın Gözüken Yüzünü Oluştururuz örneğin bu yazı.</p> <hr>
+<li class="kod" id="kd6"></li> <p style="display: inline;">Bu Kod İle Sayfada bir paragraf açarız.yazı yazmaya yarar body'nin içerisinde olur.</p> <hr>
+<li class="kod" id="kd7"></li> <p style="display: inline;">Bu Kod İle Bir Link oluştururuz ve içine href etiketi getirerek gidiceği adresi yazarız ve açılıp kapandığı kısımların arasına yazı yazarız.</p> <hr>
+<li class="kod" id="kd8"></li> <p style="display: inline;">Bu Kodlar İle Sayfada bir başlık atarız örneğin bu sitedeki hoşgeldin yazısı.ve h1 en büyük iken h6 en küçüğüdür.</p> <hr>
+<li class="kod" id="kd9"></li> <p style="display: inline;">Bu Kod İle sayfanın içerisine başka bir sayfa koyabiliriz.src etiketi ile dosya konumu yada adres belirtiriz.</p> <hr>
+<li class="kod" id="kd10"></li> <p style="display: inline;">Bu Kod İle sayfanın içine resim koyarız.src ile dosya konumu yada adres konumunu yazarız.</p> <hr>
+<li class="kod" id="kd11"></li> <p style="display: inline;">Bu Kod İle Form Oluştururuz.type=""nin içine türü (örneğin text yada number) yazılır.</p> <hr>
+<li class="kod" id="kd12"></li> <p style="display: inline;">Bu Kod İle Yazı Yazma Yeri Oluştururuz.</p> <hr>
+<li class="kod" id="kd13"></li> <p style="display: inline;">Bu Kod İle Sayfada bir buton oluştururuz.</p> <hr>
+<h4>Örnekler: </h4>
+<h5>Yazı Yazma Kodu: </h5>
+<p class="kod" id="ornk1"></p>
+<h6>Sonuç:</h6>
+<p id="snc1"></p>
+<h5>Resim Ekleme Kodu: </h5>
+<p class="kod" id="ornk2"></p>
+<h6>Sonuç:</h6>
+<p id="snc2"></p>
+<h5>Sayfa içinde Sayfa Ekleme Kodu: </h5>
+<p class="kod" id="ornk3"></p>
+<h6>Sonuç:</h6>
+<p id="snc3"></p>
+<h5>Link Ekleme Kodu: </h5>
+<p class="kod" id="ornk4"></p>
+<h6>Sonuç:</h6>
+<p id="snc4"></p>
+    </div>
+    <div id="dnm">
+        <h3>Sıra Sende! Şimdi sen öğrendiklerin ile bir kod yaz!</h3>
+        <textarea name="" id="kd" placeholder="Buraya Kod Yazıcaksın."></textarea> <hr>
+        <button onclick="A()">Kodu Gönder ve Test Et!</button> <hr>
+        <iframe src="" frameborder="1" width="100%" height="400" id="iframe1"></iframe>
+    </div>
+    <script>
+        var d = document;
+        d.getElementById("yapi1").textContent = "/ ";
+        d.getElementById("yapi2").textContent = '=""';
+        d.getElementById("kd1").textContent = "<!DOCTYPE html>";
+        d.getElementById("kd2").textContent = "<head>";
+        d.getElementById("kd3").textContent = "<title>";
+        d.getElementById("kd4").textContent = "<style>";
+        d.getElementById("kd5").textContent = "<body>";
+        d.getElementById("kd6").textContent = "<p>";
+        d.getElementById("kd7").textContent = "<a>";
+        d.getElementById("kd8").textContent = "<h1>,<h2>,<h3>,<h4>,<h5>,<h6>";
+        d.getElementById("kd9").textContent = "<iframe>";
+        d.getElementById("kd10").textContent = "<img>";
+        d.getElementById("kd11").textContent = "<input>";
+        d.getElementById("kd12").textContent = "<textarea>";
+        d.getElementById("kd13").textContent = "<button>";
+        d.getElementById("ornk1").innerText = "<!DOCTYPE html>\n<head>\n<title>Yazı Örneği</title>\n</head>\n<body>\n<p>Albarmaja Disce</p>\n</body>\n</html>";
+        d.getElementById("snc1").innerHTML = "<!DOCTYPE html>\n<head>\n<title>Yazı Örneği</title>\n</head>\n<body>\n<p>Albarmaja Disce</p>\n</body>\n</html>";
+        d.getElementById("ornk2").innerText = '<!DOCTYPE html>\n<head>\n<title>Resim Örneği</title>\n</head>\n<body>\n<p>Resim: </p>\n <img src="resim2.png"></img>\n</body>\n</html>';
+        d.getElementById("snc2").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Resim Örneği</title>\n</head>\n<body>\n<p>Resim: </p>\n <img src="resim2.png"></img>\n</body>\n</html>';
+        d.getElementById("ornk3").innerText = '<!DOCTYPE html>\n<head>\n<title>Sayfa İçinde Sayfa Örneği</title>\n</head>\n<body>\n<p>Vikipedi: </p>\n <iframe src="https://tr.wikipedia.org/"></img>\n</body>\n</html>';
+        d.getElementById("snc3").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Sayfa İçinde Sayfa Örneği</title>\n</head>\n<body>\n<p>Vikipedi: </p>\n <iframe src="https://tr.wikipedia.org/"></img>\n</body>\n</html>';
+        d.getElementById("ornk4").innerText = '<!DOCTYPE html>\n<head>\n<title>Link Örneği</title>\n</head>\n<body>\n<p>Link: </p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n</body>\n</html>';
+        d.getElementById("snc4").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Link Örneği</title>\n</head>\n<body>\n<p>Link: </p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n</body>\n</html>';
+        function A(){
+            d.getElementById("iframe1").srcdoc = d.getElementById("kd").value;
+        }
+    </script>
+</body>
+</html>
