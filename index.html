@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Albarmaja Disce İle HTML Öğren! Tamamen Ücretsiz ve Açık Kaynak Bir Projedir.Amacımız yazılımcılık bilen insanların sayısını arttırmaktır.">
     <title>Albarmaja Disce</title>
     <style>
         body{
@@ -36,7 +37,7 @@
     <center>
     <h2 id="karsilama">Hoşgeldiniz.</h2>
     <p id="cikanyazi">Albarmaja Disce ile HTML Öğrenin.Tamamen Ücretsiz ve Açık Kaynak Bir Yazılımdır.</p>
-    <h6>v0.1</h6>
+    <h6>v0.2</h6>
     </center>
     <div id="ogrn">
         <h4>HTML Öğrenme</h4>
@@ -58,6 +59,21 @@
 <li class="kod" id="kd11"></li> <p style="display: inline;">Bu Kod İle Form Oluştururuz.type=""nin içine türü (örneğin text yada number) yazılır.</p> <hr>
 <li class="kod" id="kd12"></li> <p style="display: inline;">Bu Kod İle Yazı Yazma Yeri Oluştururuz.</p> <hr>
 <li class="kod" id="kd13"></li> <p style="display: inline;">Bu Kod İle Sayfada bir buton oluştururuz.</p> <hr>
+<h3>Etiketler: </h3>
+<li class="kod" id="etkt1"></li> <p style="display: inline;">Bu Etiket İle Sayfada bir Satır İndiririz (çizgili bir şekide).</p> <hr>
+<li class="kod" id="etkt2"></li> <p style="display: inline;">Bu Etiket İle Sayfada bir Satır İndiririz (çizgisiz bir şekide).</p> <hr>
+<li class="kod" id="etkt3"></li> <p style="display: inline;"><b>Bu Etiket İle yazıyı kalınlaştırırız.Örneğin Bu Yazı Gibi</b></p> <hr>
+<li class="kod" id="etkt4"></li> <p style="display: inline;"><s>Bu Etiket İle yazının üstünü çizeriz.Örneğin Bu Yazı Gibi.</s></p> <hr>
+<li class="kod" id="etkt5"></li> <p style="display: inline;"><i>Bu Etiket İle yazıyı el yazısına benzetiriz.Örneğin Bu Yazı Gibi.</i></p> <hr>
+<li class="kod" id="etkt6"></li> <p style="display: inline;"><u>Bu Etiket İle yazının altını çizeriz.Örneğin Bu Yazı Gibi.</u></p> <hr>
+<marquee><li class="kod" id="etkt7"></li> <p style="display: inline;">Bu Etiket İle Yazıyı Kayan Yazıya Dönüştürürüz.Örneğin Bu Yazı Gibi.</marquee></p> <hr>
+<div id="vd">
+<!--<h3>Videolar:</h3>
+<video src="">
+    <source src="">
+</video>
+<p>Temel HTML.HTML'nin Yapısı ve Bazı Kodlar.</p>
+</div>-->
 <h4>Örnekler: </h4>
 <h5>Yazı Yazma Kodu: </h5>
 <p class="kod" id="ornk1"></p>
@@ -75,6 +91,10 @@
 <p class="kod" id="ornk4"></p>
 <h6>Sonuç:</h6>
 <p id="snc4"></p>
+<h5>Tüm Hepsinin Toplam Kodu: </h5>
+<p class="kod" id="ornk5"></p>
+<h6>Sonuç:</h6>
+<p id="snc5"></p>
     </div>
     <div id="dnm">
         <h3>Sıra Sende! Şimdi sen öğrendiklerin ile bir kod yaz!</h3>
@@ -99,6 +119,13 @@
         d.getElementById("kd11").textContent = "<input>";
         d.getElementById("kd12").textContent = "<textarea>";
         d.getElementById("kd13").textContent = "<button>";
+        d.getElementById("etkt1").textContent = "<hr>";
+        d.getElementById("etkt2").textContent = "<br>";
+        d.getElementById("etkt3").textContent = "<b>";
+        d.getElementById("etkt4").textContent = "<s>";
+        d.getElementById("etkt5").textContent = "<i>";
+        d.getElementById("etkt6").textContent = "<u>";
+        d.getElementById("etkt7").textContent = "<marquee>";
         d.getElementById("ornk1").innerText = "<!DOCTYPE html>\n<head>\n<title>Yazı Örneği</title>\n</head>\n<body>\n<p>Albarmaja Disce</p>\n</body>\n</html>";
         d.getElementById("snc1").innerHTML = "<!DOCTYPE html>\n<head>\n<title>Yazı Örneği</title>\n</head>\n<body>\n<p>Albarmaja Disce</p>\n</body>\n</html>";
         d.getElementById("ornk2").innerText = '<!DOCTYPE html>\n<head>\n<title>Resim Örneği</title>\n</head>\n<body>\n<p>Resim: </p>\n <img src="resim2.png"></img>\n</body>\n</html>';
@@ -107,6 +134,8 @@
         d.getElementById("snc3").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Sayfa İçinde Sayfa Örneği</title>\n</head>\n<body>\n<p>Vikipedi: </p>\n <iframe src="https://tr.wikipedia.org/"></img>\n</body>\n</html>';
         d.getElementById("ornk4").innerText = '<!DOCTYPE html>\n<head>\n<title>Link Örneği</title>\n</head>\n<body>\n<p>Link: </p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n</body>\n</html>';
         d.getElementById("snc4").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Link Örneği</title>\n</head>\n<body>\n<p>Link: </p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n</body>\n</html>';
+        d.getElementById("ornk5").innerText = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar Örneği</title>\n</head>\n<body>\n<p><u>Link: </u></p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n<textarea></textarea>\n<button>Bas!</button>\n<input type="number">\n<img src="resim2.png">\n<iframe src="wikpedia.org">\n<h1><marquee>Dönen Başlık</marquee></h1>\n</body>\n</html>';
+        d.getElementById("snc5").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar Örneği</title>\n</head>\n<body>\n<p><u>Link: </u></p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n<textarea></textarea>\n<button>Bas!</button>\n<input type="number">\n<img src="resim2.png">\n<iframe src="https://tr.wikipedia.org/">\n<h1><marquee>Dönen Başlık</marquee></h1>\n</body>\n</html>';
         function A(){
             d.getElementById("iframe1").srcdoc = d.getElementById("kd").value;
         }
