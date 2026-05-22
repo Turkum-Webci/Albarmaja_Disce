@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Albarmaja Disce İle HTML Öğren! Tamamen Ücretsiz ve Açık Kaynak Bir Projedir.Amacımız yazılımcılık bilen insanların sayısını arttırmaktır.">
+    <meta name="description" content="Albarmaja Disce İle HTML ve CSS Öğren! Tamamen Ücretsiz ve Açık Kaynak Bir Projedir.Amacımız yazılımcılık bilen insanların sayısını arttırmaktır.">
     <title>Albarmaja Disce</title>
     <style>
         body{
@@ -36,8 +36,13 @@
 <body>
     <center>
     <h2 id="karsilama">Hoşgeldiniz.</h2>
-    <p id="cikanyazi">Albarmaja Disce ile HTML Öğrenin.Tamamen Ücretsiz ve Açık Kaynak Bir Yazılımdır.</p>
-    <h6>v0.2</h6>
+    <p id="cikanyazi">Albarmaja Disce ile HTML ve CSS Öğrenin.Tamamen Ücretsiz ve Açık Kaynak Bir Yazılımdır.</p>
+    <h6>v0.3</h6>
+    <button><a href="#ogrn">HTML Öğrenme</a></button>
+    <button><a href="#etktl">Etiketler</a></button>
+    <button><a href="#ornklr">Örnekler (HTML)</a></button>
+    <button><a href="#css">CSS Öğrenme</a></button>
+    <button><a href="#dnm">Kod yazma</a></button>
     </center>
     <div id="ogrn">
         <h4>HTML Öğrenme</h4>
@@ -59,7 +64,8 @@
 <li class="kod" id="kd11"></li> <p style="display: inline;">Bu Kod İle Form Oluştururuz.type=""nin içine türü (örneğin text yada number) yazılır.</p> <hr>
 <li class="kod" id="kd12"></li> <p style="display: inline;">Bu Kod İle Yazı Yazma Yeri Oluştururuz.</p> <hr>
 <li class="kod" id="kd13"></li> <p style="display: inline;">Bu Kod İle Sayfada bir buton oluştururuz.</p> <hr>
-<h3>Etiketler: </h3>
+<li class="kod" id="kd14"></li> <p style="display: inline;">Bu Kod İle JavaScript'i Çağırırız.JavaScript (JS) başka bir yazılım dilidir.</p> <hr>
+<h3 id="etktl">Etiketler: </h3>
 <li class="kod" id="etkt1"></li> <p style="display: inline;">Bu Etiket İle Sayfada bir Satır İndiririz (çizgili bir şekide).</p> <hr>
 <li class="kod" id="etkt2"></li> <p style="display: inline;">Bu Etiket İle Sayfada bir Satır İndiririz (çizgisiz bir şekide).</p> <hr>
 <li class="kod" id="etkt3"></li> <p style="display: inline;"><b>Bu Etiket İle yazıyı kalınlaştırırız.Örneğin Bu Yazı Gibi</b></p> <hr>
@@ -74,7 +80,7 @@
 </video>
 <p>Temel HTML.HTML'nin Yapısı ve Bazı Kodlar.</p>
 </div>-->
-<h4>Örnekler: </h4>
+<h4 id="ornklr">Örnekler: </h4>
 <h5>Yazı Yazma Kodu: </h5>
 <p class="kod" id="ornk1"></p>
 <h6>Sonuç:</h6>
@@ -95,6 +101,52 @@
 <p class="kod" id="ornk5"></p>
 <h6>Sonuç:</h6>
 <p id="snc5"></p>
+    </div>
+    <div id="css">
+        <h4>CSS Öğrenme</h4>
+        <p>Bazı Temel Bilgiler: <br> #:eğer kullanılcak şey id ise bunun ile başlanılır <br> .:eğer class kullanılıyorsa bunun ile başlanılır <br> ; : bunun ile kod durdurulur <br> {: ile yapılcak şey başlatılır id yada class'ın içinde olucak kodlar <br> }: bunun ile kapatılır.</p>
+        <h5>CSS'ten Bazı Kodlar:</h5>
+
+        <li class="kod">background-color: ;</li> <p style="display: inline;">Bu Kod İle Bir tane renk veririz.Örneğin:
+            <br>
+            #div1{<br>
+                background-color: red;<br>
+            }
+        </p> <hr>
+        <li class="kod">width: ;</li> <p style="display: inline;">Bu Kod İle element (HTML kodu/tagi)'in genişliğini ayarlarız.Örneğin:
+            <br>
+            #div1{<br>
+                width: 100px;<br>
+            }
+        </p> <hr>
+                <li class="kod">height: ;</li> <p style="display: inline;">Bu Kod İle element (HTML kodu/tagi)'in uzunluğunu ayarlarız.Örneğin:
+            <br>
+            #div1{<br>
+                height: 100px;<br>
+            }
+        </p> <hr>
+                <li class="kod">color: ;</li> <p style="display: inline;">Bu Kod İle yazı rengini ayarlarız.Örneğin:
+            <br>
+            #div1{<br>
+                color: blue;<br>
+            }
+        </p> <hr>
+                <li class="kod">border-radius: ;</li> <p style="display: inline;">Bu Kod İle element'in (HTML kodu/tagi)'in yumuşaklık(yuvarlaklığını) ayarlarız.Örneğin:
+            <br>
+            #div1{ <br>
+                border-radius: 20px; <br>
+            }
+        </p> <hr>
+        <p>Full Örnek: </p> <hr>
+        <p class="kod" id="ornk6"></p> <hr>
+        <p>Sonuç:</p>
+        <p id="snc6"></p>
+    </div>
+    <div id="js">
+                <h4>JS Öğrenme</h4>
+        <h5>JS'den Bazı Kodlar:</h5>
+
+        <li class="kod">alert("");</li> <p style="display: inline;">Bu Kod İle "" arasına eklenilecek yazı eklenir ve bu yazı otomatik karşımıza o yazı çıkar.
     </div>
     <div id="dnm">
         <h3>Sıra Sende! Şimdi sen öğrendiklerin ile bir kod yaz!</h3>
@@ -119,6 +171,7 @@
         d.getElementById("kd11").textContent = "<input>";
         d.getElementById("kd12").textContent = "<textarea>";
         d.getElementById("kd13").textContent = "<button>";
+        d.getElementById("kd14").textContent = "<script>";
         d.getElementById("etkt1").textContent = "<hr>";
         d.getElementById("etkt2").textContent = "<br>";
         d.getElementById("etkt3").textContent = "<b>";
@@ -136,9 +189,53 @@
         d.getElementById("snc4").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Link Örneği</title>\n</head>\n<body>\n<p>Link: </p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n</body>\n</html>';
         d.getElementById("ornk5").innerText = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar Örneği</title>\n</head>\n<body>\n<p><u>Link: </u></p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n<textarea></textarea>\n<button>Bas!</button>\n<input type="number">\n<img src="resim2.png">\n<iframe src="wikpedia.org">\n<h1><marquee>Dönen Başlık</marquee></h1>\n</body>\n</html>';
         d.getElementById("snc5").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar Örneği</title>\n</head>\n<body>\n<p><u>Link: </u></p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n<textarea></textarea>\n<button>Bas!</button>\n<input type="number">\n<img src="resim2.png">\n<iframe src="https://tr.wikipedia.org/">\n<h1><marquee>Dönen Başlık</marquee></h1>\n</body>\n</html>';
+        d.getElementById("ornk6").innerText = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar (CSS) Örneği</title>\n<style>\n#div{\ncolor: red;\nbackground-color: blue;\nwidth: 100px;\nheight: 80px;\nborder-radius: 10px;\n</style>\n</head>\n<body>\n<p id="div">Merhaba Dünya!</p>\n</body>\n</html>';
+        d.getElementById("snc6").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar (CSS) Örneği</title>\n<style>\n#div{\ncolor: red;\nbackground-color: blue;\nwidth: 100px;\nheight: 80px;\nborder-radius: 10px;\n</style>\n</head>\n<body>\n<p id="div">Merhaba Dünya!</p>\n</body>\n</html>';
         function A(){
             d.getElementById("iframe1").srcdoc = d.getElementById("kd").value;
         }
+        document.addEventListener("keydown", function(e){
+            if(e.altKey && e.key == "y"){
+                document.getElementById("kd").value += "<!DOCTYPE html>\n<head>\n<title>Başlık</title>\n<style>\n\n</style>\n</head>\n<body>\n\n</body>\n</html>";
+            }
+            else if(e.altKey && e.key == "H"){
+                document.getElementById("kd").value += "<h1></h1>";
+            }
+            else if(e.altKey && e.key == "o"){
+                document.getElementById("kd").value += "<p></p>";
+            }
+            else if(e.altKey && e.key == "O"){
+                document.getElementById("kd").value += '<a href=""></a>';
+            }
+            else if(e.altKey && e.key == "p"){
+                document.getElementById("kd").value += '<img src="">';
+            }
+            else if(e.altKey && e.key == "P"){
+                document.getElementById("kd").value += '<iframe src="">';
+            }
+            else if(e.altKey && e.key == "l"){
+                document.getElementById("kd").value += '<input type="">';
+            }
+            else if(e.altKey && e.key == "L"){
+                document.getElementById("kd").value += '<textarea></textarea>';
+            }
+            else if(e.altKey && e.key == "Y"){
+                document.getElementById("kd").value += 'background-color: ;';
+            }
+            else if(e.altKey && e.key == "c"){
+                document.getElementById("kd").value += 'width: ;';
+            }
+            else if(e.altKey && e.key == "C"){
+                document.getElementById("kd").value += 'height: ;';
+            }
+            else if(e.altKey && e.key == "."){
+                document.getElementById("kd").value += 'border-radius: ;';
+            }
+            else if(e.altKey && e.key == ","){
+                document.getElementById("kd").value += 'color : ;';
+            }
+        });
     </script>
 </body>
 </html>
+<!--<!DOCTYPE html>\n<head>\n<title>Başlık</title>\n<style>\n\n</style>\n</head>\n<body>\n\n</body>\n</html>"-->
