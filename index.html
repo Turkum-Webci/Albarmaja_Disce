@@ -37,11 +37,13 @@
     <center>
     <h2 id="karsilama">Hoşgeldiniz.</h2>
     <p id="cikanyazi">Albarmaja Disce ile HTML ve CSS Öğrenin.Tamamen Ücretsiz ve Açık Kaynak Bir Yazılımdır.</p>
-    <h6>v0.3</h6>
+    <h6>v0.4</h6>
     <button><a href="#ogrn">HTML Öğrenme</a></button>
     <button><a href="#etktl">Etiketler</a></button>
     <button><a href="#ornklr">Örnekler (HTML)</a></button>
     <button><a href="#css">CSS Öğrenme</a></button>
+    <button><a href="#js1">JavaScript Kodlar</a></button>
+    <button><a href="#js2">JavaScript Operatörler</a></button>
     <button><a href="#dnm">Kod yazma</a></button>
     </center>
     <div id="ogrn">
@@ -143,10 +145,38 @@
         <p id="snc6"></p>
     </div>
     <div id="js">
-                <h4>JS Öğrenme</h4>
+                <h4 id="js1">JS Öğrenme</h4>
         <h5>JS'den Bazı Kodlar:</h5>
 
-        <li class="kod">alert("");</li> <p style="display: inline;">Bu Kod İle "" arasına eklenilecek yazı eklenir ve bu yazı otomatik karşımıza o yazı çıkar.
+        <li style="display: inline;">//</li> <p style="display: inline;">(görmediyseniz iki tane yan yana / işareti)Bu Kod İle yorum satırı oluştururuz.Yorum Satırı koda etki etmeyen ancak kodun içinde olan yazıdır.İnsan diliyle yazılır.İsterseniz orda besmelede çekebilirsiniz koduda açıklayabilirsiniz.</p><br>
+        <li class="kod">alert("");</li> <p style="display: inline;">Bu Kod İle "" arasına eklenilecek yazı eklenir ve bu yazı otomatik karşımıza o yazı çıkar.</p><br>
+        <li class="kod">document.</li> <p style="display: inline;">Bu Kod İle Dökümanın içinden birşey alabiliriz yani web sitesinin.İnşAllah anlamıştırsınız bu biraz teknik açıklama oldu.</p><br>
+        <li class="kod">innerText = "";</li> <p style="display: inline;">Bu Kod İle elemente yazı ekletiriz.Örneği birazdan vereceğim.</p><br>
+        <li class="kod">getElementById("").</li><p style="display: inline;">Bu Kod ile "" arasına istediğimiz element'in id'sini veririz.Örneğin:</p><hr>
+        <p class="kod">document.getElementById("yazi1").innerText = "Bu Bir Örnektir."; <br> //yazi1 elementi hayalidir yapmak için body'e bir p oluşturup id="yazi1" yapmalısınız.</p><hr>
+        <li class="kod">innerHTML = "";</li> <p style="display: inline;">Bu Kod İle elemente HTML Kodu ekletiriz.Örneğin: </p><hr>
+        <p class="kod" id="ornk7"><hr>
+        <li class="kod">function ?(){}</li> <p style="display: inline;">Bu Kod İle Fonksiyon oluştururuz.? yerine fonksiyonu çağıran şeyin adı gelir.Bunun en basidi button kodunu kullanırken button'dan sonra boşluk bırakıp onclick="" yazmak ve buradaki ""'ın' içine birşey yazın ancak sonunda () mutlaka olsun. bu çağırıcının adı olucak.Sonra burda yazdığınızı ? kısmına yazın ve bu butona tıklanınca fonksiyon çalışır.ve {}'ın arasına kodlar girilir fonksiyon çalışınca çalışacak kodlar.çok teknik oldu önerim bir yapay zekaya sorabilirsiniz anlamak için.Örneğin: </p><hr>
+        <p class="kod" id="ornk8">
+            <p>Sonuç:</p>
+            <p id="yazi1">1</p>
+            <button onclick="iki()">Bas!</button> <hr>
+            <li class="kod">var ? = ;</li><p style="display: inline;">Bu Kod ile ? yerine istediğimiz yazıyı yazabiliriz bu değişkendir.Matematikteki cebir ile aynıdır.='den sonraki yere bu değişkenin ne olduğunu söyleriz örneğin:sayıysa sayısını,yazıysa "" koyarak ""'nın içine yazısını,Element'in id'si ise document.getElementById("?") veririz (? yerine elementin id'si yazılır.) bir çok şeye verilebilir.Ancak .innerText yada .innerHTML kullanırken "" kısmı yerine sadece değişkenin adı girilir.güzel bir haberim var bunu biliyorsanız şuan operatörleride öğrenip basit bir oyun yapabilirsiniz.</p><hr>
+            <h5 id="js2">JS'deki Operatörler:</h5>
+            <li style="display: inline;">+ </li><p style="display: inline;">Normal Arttırmak.Birkez Arttır işleminden sonra dahada artmaz.</p>
+            <li style="display: inline;">- </li><p style="display: inline;">Normal Çıkarma.Birkez çıkar işleminden sonra dahada çıkarmaz.</p>
+            <li style="display: inline;">* </li><p style="display: inline;">Normal çarpma.Birkez çarp işleminden sonra dahada çarpmaz.</p>
+            <li style="display: inline;">/ </li><p style="display: inline;">Normal bölme.Birkez böl işleminden sonra dahada bölmez.</p>
+            <li style="display: inline;">+= </li><p style="display: inline;">Tekrar Arttırmak.Birkez Arttır işleminden sonra Hala artabilir.</p>
+            <li style="display: inline;">-= </li><p style="display: inline;">Tekrar Çıkarmak.Birkez çıkar işleminden sonra Hala çıkarabilir.</p>
+            <li style="display: inline;">*= </li><p style="display: inline;">Tekrar Çarpmak.Birkez çarp işleminden sonra Hala Çaprabilir.</p>
+            <li style="display: inline;">/= </li><p style="display: inline;">Tekrar Bölmek.Birkez böl işleminden sonra Hala Bölebilir.</p>
+            <p>Kalanı inşAllah v.05'te çünkü kalanı daha çok if-else ile alakalı.</p>
+            <p>Oyun Örneği: </p>
+            <p class="kod" id="ornk9"></p>
+            <p>Sonuç:</p>
+            <p id="yazi2">1</p>
+            <button onclick="uc()">Bas!</button>
     </div>
     <div id="dnm">
         <h3>Sıra Sende! Şimdi sen öğrendiklerin ile bir kod yaz!</h3>
@@ -156,6 +186,14 @@
     </div>
     <script>
         var d = document;
+        var puan = 1;
+        function iki(){
+            d.getElementById("yazi1").innerText = "2";
+        }
+        function uc(){
+            puan += 1;
+            d.getElementById("yazi2").innerText = puan;
+        }
         d.getElementById("yapi1").textContent = "/ ";
         d.getElementById("yapi2").textContent = '=""';
         d.getElementById("kd1").textContent = "<!DOCTYPE html>";
@@ -191,6 +229,9 @@
         d.getElementById("snc5").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar Örneği</title>\n</head>\n<body>\n<p><u>Link: </u></p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n<textarea></textarea>\n<button>Bas!</button>\n<input type="number">\n<img src="resim2.png">\n<iframe src="https://tr.wikipedia.org/">\n<h1><marquee>Dönen Başlık</marquee></h1>\n</body>\n</html>';
         d.getElementById("ornk6").innerText = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar (CSS) Örneği</title>\n<style>\n#div{\ncolor: red;\nbackground-color: blue;\nwidth: 100px;\nheight: 80px;\nborder-radius: 10px;\n</style>\n</head>\n<body>\n<p id="div">Merhaba Dünya!</p>\n</body>\n</html>';
         d.getElementById("snc6").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar (CSS) Örneği</title>\n<style>\n#div{\ncolor: red;\nbackground-color: blue;\nwidth: 100px;\nheight: 80px;\nborder-radius: 10px;\n</style>\n</head>\n<body>\n<p id="div">Merhaba Dünya!</p>\n</body>\n</html>';
+        d.getElementById("ornk7").innerText = 'document.getElementById("div1").innerHTML = "<p>Merhaba Bu Bir Örnektir</p><br><p>Hoşgeldiniz</p>";';
+        d.getElementById("ornk8").innerText = '<!DOCTYPE html>\n<head>\n<title>JavaScript Fonksiyon Örneği</title>\n</head>\n<body>\n<p id="yazi1">1</p>\n<button onclick="iki()">Bas!</button>\n<script>\nfunction iki(){\ndocument.getElementById("yazi1").innerText = "2";\n}\n//<scrip yazdım çünkü t> yazılamıyor maalesef siz var gibi düşünün \n</scrip\n</body>\n</html>';
+        d.getElementById("ornk9").innerText = '<!DOCTYPE html>\n<head>\n<title>Oyun Örneği</title>\n</head>\n<body>\n<p id="yazi2">1</p>\n<button onclick="uc()">Bas!</button>\n<script>\nvar puan = 1;\nfunction uc(){\npuan +=1 ;\ndocument.getElementById("yazi2").innerText = puan;\n}\n//<scrip yazdım çünkü t> yazılamıyor maalesef siz var gibi düşünün \n</scrip\n</body>\n</html>';
         function A(){
             d.getElementById("iframe1").srcdoc = d.getElementById("kd").value;
         }
