@@ -171,13 +171,33 @@
             <li style="display: inline;">-= </li><p style="display: inline;">Tekrar Çıkarmak.Birkez çıkar işleminden sonra Hala çıkarabilir.</p><br>
             <li style="display: inline;">*= </li><p style="display: inline;">Tekrar Çarpmak.Birkez çarp işleminden sonra Hala Çaprabilir.</p><br>
             <li style="display: inline;">/= </li><p style="display: inline;">Tekrar Bölmek.Birkez böl işleminden sonra Hala Bölebilir.</p><br>
+            <li style="display: inline;">== </li><p style="display: inline;">Eşitse demek.</p><br>
+            <li style="display: inline;">!= </li><p style="display: inline;">Eşit değilse demek.</p><br>
+            <li style="display: inline;">>= </li><p style="display: inline;">Büyük yada eşitse demek.</p><br>
+            <li style="display: inline;"><= </li><p style="display: inline;">Küçük yada eşitse demek.</p><br>
+            <li style="display: inline;">> </li><p style="display: inline;">Büyükse demek.</p><br>
+            <li style="display: inline;">< </li><p style="display: inline;">Küçükse demek.</p><br>
             <p>Kalanı inşAllah v.05'te çünkü kalanı daha çok if-else ile alakalı.</p><br>
             <p>Oyun Örneği: </p><br>
             <p class="kod" id="ornk9"></p>
             <p>Sonuç:</p>
             <p id="yazi2">1</p>
             <button onclick="uc()">Bas!</button>
-    </div>
+            <h6>if-else:</h6>
+            <p>if-else çoğu programlama dilinin temelidir if:eğer,else:değilse demektir ve bu sayede oyunlar yapmak için daha çok şey bileceksiniz.hatta bu sayede Sınıf Başkanı Olma Similatörün uzaktan bir benzerini yapabileceksiniz inşAllah.</p>
+            <li class="kod">if(koşul){koşul tetiklenince tetiklenen kodlar}</li> <p style="display: inline;">if eğer demektir.()'ın içindeki koşul sağlanırsa {}'ın içindeki kodlar tetiklenir.Örneğin: </p><hr>
+            <p class="kod">var a = 0; <br> function F(){ <br> a += 1; <br> if(a >= 100){ <br>alert("Tebrikler oyunu kazandın!"); <br> }<br> }</p> <hr>
+            <li class="kod">else{if'te ki koşul tetiklenmediğinde tetiklenen kodlar}</li> <p style="display: inline;">else değilse demektir.</p><hr>
+            <h6>SetInterval ve SetTimeout:</h6><br>
+            <li class="kod">SetInterval(function ?(){}, ?);</li> <p style="display: inline;">SetInterval sayesinde her belirlenen vakitte bir olayın tekrar tekrar tetiklenmesi gerçekleşir.</p><br>
+            <p>Açıklama:SetInterval(function ?(){}, ?) burda 2. ? yerine orda olucak saniye çarpı 1000 yazılır yani 5 saniye olması istenirse oraya 5000 yazılır.</p>
+            <p>Örneğin: </p><hr>
+            <p class="kod">var a = 0; <br> SetInterval(function A(){ <br> a += 1; <br> alert(a); <br> }, 1000);</p><hr>
+            <p>her saniye 1-2-3 diye sayar.</p><hr>
+            <li class="kod">SetTimeout(function ?(){}, ?);</li> <p style="display: inline;">SetTimeout sayesinde her belirlenen vakitte bir olayın tetiklenmesi gerçekleşir.Örneğin: </p><hr>
+            <p class="kod">var a = 0; <br> SetTimeout(function A(){ <br> a += 1; <br> alert(a); <br> }, 1000);</p><hr>
+            <p>sadece birkez 1 saniyeliğine a'nın değeri söylenir.</p>
+        </div>
     <div id="dnm">
         <h3>Sıra Sende! Şimdi sen öğrendiklerin ile bir kod yaz!</h3>
         <textarea name="" id="kd" placeholder="Buraya Kod Yazıcaksın."></textarea> <hr>
@@ -185,6 +205,7 @@
         <iframe src="" frameborder="1" width="100%" height="400" id="iframe1"></iframe>
     </div>
     <script>
+        //blackburawwytahmetburak-code bunu unutma.
         var d = document;
         var puan = 1;
         function iki(){
