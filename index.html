@@ -37,13 +37,14 @@
     <center>
     <h2 id="karsilama">Hoşgeldiniz.</h2>
     <p id="cikanyazi">Albarmaja Disce ile HTML ve CSS Öğrenin.Tamamen Ücretsiz ve Açık Kaynak Bir Yazılımdır.</p>
-    <h6>v0.5</h6>
+    <h6>v0.6</h6>
     <button><a href="#ogrn">HTML Öğrenme</a></button>
     <button><a href="#etktl">Etiketler</a></button>
     <button><a href="#ornklr">Örnekler (HTML)</a></button>
     <button><a href="#css">CSS Öğrenme</a></button>
     <button><a href="#js1">JavaScript Kodlar</a></button>
     <button><a href="#js2">JavaScript Operatörler</a></button>
+    <button><a href="#js3">JavaScript Math.</a></button>
     <button><a href="#dnm">Kod yazma</a></button>
     </center>
     <div id="ogrn">
@@ -139,6 +140,7 @@
                 border-radius: 20px; <br>
             }
         </p> <hr>
+        <li class="kod">display: ;</li> <p style="display: inline;">Bu Kod İle display veririz elemente.display kodundan sonra ya "none" gelir bu sayede ordaki yok olur yada "block" gelir ordaki tüm satırı kaplar ve diğerleri aşağı satıra iner yada "inline" gelir bu sayede diğer şeyler aşağıya kaymaz yada "inline-block" gelir bu sayede diğer şeyler aşağı kaymaz ve div gibi elementlerde yok olmaz.buna benzer birkaç şeyde gelebilir. </p>
         <p>Full Örnek: </p> <hr>
         <p class="kod" id="ornk6"></p> <hr>
         <p>Sonuç:</p>
@@ -197,6 +199,26 @@
             <li class="kod">SetTimeout(function ?(){}, ?);</li> <p style="display: inline;">SetTimeout sayesinde her belirlenen vakitte bir olayın tetiklenmesi gerçekleşir.Örneğin: </p><hr>
             <p class="kod">var a = 0; <br> SetTimeout(function A(){ <br> a += 1; <br> alert(a); <br> }, 1000);</p><hr>
             <p>sadece birkez 1 saniyeliğine a'nın değeri söylenir.</p>
+            <li class="kod">.value</li> <p style="display: inline;">.value textarea,input,option vb. gibi HTML kodlarının değerini çeker.Örneğin: </p><hr>
+            <p class="kod">function A(){<br> if(document.getElementById("yazi").value == "merhaba"){<br>alert("Sanada Merhaba!");<br>}<br>}</p><hr>
+            <p>bu kod sayesinde yazi id'li elementin değeri çekilip merhaba yazısına eşitse alert(); veriyor.</p><br>
+            <li class="kod" id="js3">Math</li> <p style="display: inline;">Bu Bazı Matematik İşlemlerini söyler.Bu İşlemler: </p><hr>
+            <li class="kod">.random()</li> <p style="display: inline;">Random sayı tutar (0 ile 1 arası ve ()'ın arası boş kalır.)</p><br>
+            <li class="kod">.abs()</li> <p style="display: inline;">()'ın arasına girilen sayı/değişkenin mutlak hali söylenir (örneğin Math.abs(-3) dersen sonuç 3 olur.)</p><br>
+            <li class="kod">.ceil()</li> <p style="display: inline;">()'ın arasına girilen sayı/değişkeni yukarıya yuvarlar (örneğin Math.ceil(4.2) dersen sonuç 5 olur.)</p><br>
+            <li class="kod">.floor()</li> <p style="display: inline;">()'ın arasına girilen sayı/değişkeni aşağıya yuvarlar (örneğin Math.floor(4.2) dersen sonuç 4 olur.ve çoğu zaman .random() ile birlikte kullanılır tam sayı elde etmek ve 1'in üstünde sayı elde etmek için yani: Math.floor(Math.random()* 10)); bu sayede 1 ile 10 arası sayı tutar)</p><br>
+            <li class="kod">.round()</li> <p style="display: inline;">()'ın arasına girilen sayı/değişkeni en yakına yuvarlar (örneğin Math.round(4.5) dersen sonuç 5 olur.eğer onu 4.4 ile değiştirirsen 4 olur.)</p><br>
+            <li class="kod">.max()</li> <p style="display: inline;">()'ın arasına girilen sayıların/değişkenlerin en büyüğünü söyler (örneğin Math.max(3, 4, 6) dersen sonuç 6 olur.)</p><br>
+            <li class="kod">.min()</li> <p style="display: inline;">()'ın arasına girilen sayıların/değişkenlerin en küçüğünü söyler (örneğin Math.min(4, 9, 1) dersen sonuç 1 olur.)</p><br>
+            <li class="kod">.pow()</li> <p style="display: inline;">()'ın arasına girilen sayı/değişkeninin üssünü alır. (örneğin Math.pow(2, 3) dersen sonuç 8 olur.ilk girilen sayıdan sonra , bıraktıktan sonra yazılan sayı üstür.)</p><br>
+            <li class="kod">.sqrt()</li> <p style="display: inline;">()'ın arasına girilen sayı/değişkeninin kökünü alır. (örneğin Math.sqrt(36) dersen sonuç 6 olur.)</p><br>
+            <li class="kod">.trunc()</li> <p style="display: inline;">()'ın arasına girilen sayı/değişkenin ondalığını atar. (örneğin Math.trunc(5.8) dersen sonuç 5 olur.)</p><hr>
+            <li class="kod">.querySelectorAll</li> <p style="display: inline;">bunu yazmamalıydım .d Şaka yapıyorum ama ben bu kodu gereksede KULLANMIYORUM ONUN YERİNE document.getElementById("?") ile sitenin %20'sini yapıyorum.Neyse siz siz olun bu kodu kullanın.birde bunun suç ortağı var .querySelector diye gidip document.getElementById() yazmaya üşenenler için neyse.Bahsedeyeyim bu kod hakkında:bu kodda ()'ın arasına aradığınız şeyleri yazıyorsunuz.Örneğin siz eğer ki tüm input type="radio"'yu arıyorsanız şöyle yazıcaksınız: document.querySelectorAll('input[type="radio"]') bu kod ile.yinede siz siz olun bu kodu gerekmedikçe kullanmayın .d</p><br>
+            <li class="kod">.style</li> <p style="display: inline;">Bu kod ile seçilen şey için CSS verilir yani örneğin: </p><hr>
+            <p class="kod">function A(){<br> document.getElementById("a").style.display = "none"; <br> }</p><hr>
+            <p>bu kod sayesinde A() fonksiyonu tetiklendiğinde a id'li element yok olur.</p><hr>
+            <p id="flornk" class="kod"></p> <hr>
+            <p>bu kod sayesinde oyun tarzı birşey yaparsınız. eğer aşağıdaki alana yansıtmak istiyorsanız <button onclick="YNST()">bu butona</button> tıklayın.</p>
         </div>
     <div id="dnm">
         <h3>Sıra Sende! Şimdi sen öğrendiklerin ile bir kod yaz!</h3>
@@ -253,8 +275,12 @@
         d.getElementById("ornk7").innerText = 'document.getElementById("div1").innerHTML = "<p>Merhaba Bu Bir Örnektir</p><br><p>Hoşgeldiniz</p>";';
         d.getElementById("ornk8").innerText = '<!DOCTYPE html>\n<head>\n<title>JavaScript Fonksiyon Örneği</title>\n</head>\n<body>\n<p id="yazi1">1</p>\n<button onclick="iki()">Bas!</button>\n<script>\nfunction iki(){\ndocument.getElementById("yazi1").innerText = "2";\n}\n//<scrip yazdım çünkü t> yazılamıyor maalesef siz var gibi düşünün \n</scrip\n</body>\n</html>';
         d.getElementById("ornk9").innerText = '<!DOCTYPE html>\n<head>\n<title>Oyun Örneği</title>\n</head>\n<body>\n<p id="yazi2">1</p>\n<button onclick="uc()">Bas!</button>\n<script>\nvar puan = 1;\nfunction uc(){\npuan +=1 ;\ndocument.getElementById("yazi2").innerText = puan;\n}\n//<scrip yazdım çünkü t> yazılamıyor maalesef siz var gibi düşünün \n</scrip\n</body>\n</html>';
+        d.getElementById("flornk").textContent = '<!DOCTYPE html>\n<html lang="tr">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>Oyun Örneği</title>\n<style>#oly1,#oly2,#oly3{display:none;}</style>\n</head>\n<body>\n<p id="p">Puan: 1</p>\n<div id="oly1">\n<p>Olay: Puanın 3 artacak</p>\n<button onclick="P3()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<div id="oly2">\n<p>Olay: Puanın 1 düşücek ancak buna 3 kez basınca puanın 5 artacak</p>\n<button onclick="P1()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<div id="oly3">\n<p>Olay: Puanın 100 düşücek ancak buna basınca her 250 milisaniyede puanın 1 artacak</p>\n<button onclick="P100()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<script>\nvar p=1,pa=0,o="evt",pha="yk";\nsetInterval(function(){\nif(o=="evt"){\no="yk";\nvar r=Math.floor(Math.random()*3)+1;\ndocument.getElementById("oly"+r).style.display="block";\n}\nif(p>=3000){alert("Kazandın! Tebrik ederim.");}\nelse if(p<0){alert("Kaybettin");}\nif(pa>=3){pa=0;p+=5;document.getElementById("p").innerHTML="Puan: "+p;}\n},10000);\nfunction P3(){p+=3;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly1").style.display="none";}\nfunction HYR(){o="evt";document.getElementById("oly1").style.display="none";document.getElementById("oly2").style.display="none";document.getElementById("oly3").style.display="none";}\nfunction P1(){pa+=1;p-=1;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly2").style.display="none";}\nfunction P100(){pha="evt";p-=100;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly3").style.display="none";}\nsetInterval(function(){if(pha=="evt"){p+=1;document.getElementById("p").innerHTML="Puan: "+p;}},250);\n<\/script>\n</body>\n</html>';
         function A(){
             d.getElementById("iframe1").srcdoc = d.getElementById("kd").value;
+        }
+        function YNST(){
+            d.getElementById("iframe1").srcdoc = '<!DOCTYPE html>\n<html lang="tr">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>Oyun Örneği</title>\n<style>#oly1,#oly2,#oly3{display:none;}</style>\n</head>\n<body>\n<p id="p">Puan: 1</p>\n<div id="oly1">\n<p>Olay: Puanın 3 artacak</p>\n<button onclick="P3()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<div id="oly2">\n<p>Olay: Puanın 1 düşücek ancak buna 3 kez basınca puanın 5 artacak</p>\n<button onclick="P1()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<div id="oly3">\n<p>Olay: Puanın 100 düşücek ancak buna basınca her 250 milisaniyede puanın 1 artacak</p>\n<button onclick="P100()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<script>\nvar p=1,pa=0,o="evt",pha="yk";\nsetInterval(function(){\nif(o=="evt"){\no="yk";\nvar r=Math.floor(Math.random()*3)+1;\ndocument.getElementById("oly"+r).style.display="block";\n}\nif(p>=3000){alert("Kazandın! Tebrik ederim.");}\nelse if(p<0){alert("Kaybettin");}\nif(pa>=3){pa=0;p+=5;document.getElementById("p").innerHTML="Puan: "+p;}\n},10000);\nfunction P3(){p+=3;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly1").style.display="none";}\nfunction HYR(){o="evt";document.getElementById("oly1").style.display="none";document.getElementById("oly2").style.display="none";document.getElementById("oly3").style.display="none";}\nfunction P1(){pa+=1;p-=1;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly2").style.display="none";}\nfunction P100(){pha="evt";p-=100;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly3").style.display="none";}\nsetInterval(function(){if(pha=="evt"){p+=1;document.getElementById("p").innerHTML="Puan: "+p;}},250);\n<\/script>\n</body>\n</html>';
         }
         document.addEventListener("keydown", function(e){
             if(e.altKey && e.key == "y"){
