@@ -43,7 +43,7 @@
     <center>
     <h1 id="karsilama">Albarmaja Disce ile HTML,CSS,JS ve SeairScript'i basitçe öğrenin.</h1>
     <p id="cikanyazi">Albarmaja Disce ile HTML,CSS,JS,PHP ve SeairScript Öğrenin.Tamamen Ücretsiz ve Açık Kaynak Bir Yazılımdır.Basit şekilde yazılım anlatıyoruz ve bu sitede dolaşırken bir yandanda yazılım zor acaba başlamalımıyım sorusuna fark dahi edemeyeceğiniz şekilde cevap veriyoruz.</p> <!--yani yalan mı .d basit şekilde anlatıyoruz birkaç kaynakla daha destekleseler kolayca öğrenirler.-->
-    <h6>v0.7</h6> <!--yeni güncellemede değiştirme bunu yine v0.7 olsun.-->
+    <h6>v0.8</h6>
     <button><a href="#ogrn">HTML Öğrenme</a></button>
     <button><a href="#etktl">Etiketler</a></button>
     <button><a href="#ornklr">Örnekler (HTML)</a></button>
@@ -251,7 +251,8 @@
             <h4>SeairScript: </h4>
 <h5>SS (SeairScript) Öğrenme</h5>
 <p>SeairScript:JS ile derlenen bir yazılım dilidir.Ve JS'yi az çok bildiğinizi varsayıyorum.Linki: </p>
-<a href="https://turkum-webci.github.io/seairscriptv2.1/">SeairScript</a>
+<p>Ek olarak: SeairScript kodu bismillah ile başlayıp elhamdülillah ile bitmelidir.</p>
+<a href="https://turkum-webci.github.io/seairscriptv2.3/">SeairScript</a>
 <h5>SS'den bazı kodlar: </h5>
 <li class="kod">ssyazdır() </li> <p style="display: inline;">Bu Kod JS'deki console.log'dur.</p><br>
 <li class="kod">ssuyar() </li> <p style="display: inline;">Bu Kod JS'deki alert()'dır.</p><br>
@@ -261,6 +262,13 @@
 <li class="kod">ssdeğişken() </li> <p style="display: inline;">Bu Kod JS'deki var'dır</p><br>
 <li class="kod">ssdöngü() </li> <p style="display: inline;">Bu Kod JS'deki while'dır (yani döngü kodudur.)</p><br>
 <li class="kod">sshtmlver() </li> <p style="display: inline;">Bu Kod JS'deki innerHTML'dır</p><br>
+<li class="kod">sseğerinzıttı() </li> <p style="display: inline;">Bu Kod JS'deki else'dir</p><br>
+<li class="kod">ssdöndür </li> <p style="display: inline;">Bu Kod JS'deki return'dur</p><br>
+<li class="kod">ssdizinegir </li> <p style="display: inline;">Bu Kod ile dizine girilir.</p><br>
+<li class="kod">ssdiziyeekle </li> <p style="display: inline;">Bu Kod ile diziye birşey eklenir.</p><br>
+<li class="kod">ssdizidenkov </li> <p style="display: inline;">Bu Kod ile dizinin son elemanı çıkarılır.</p><br>
+<li class="kod">sscetvel </li> <p style="display: inline;">Bu Kod hem string'in uzunluğunu hemde dizinin uzunluğunu ölçer</p><br>
+<li class="kod">sskovala/ssyakala </li> <p style="display: inline;">Bu Kod try ve catch'tir.</p><br>
 <li class="kod">ssdegercek() </li> <p style="display: inline;">Bu Kod JS'deki .value'dir</p><br>
 <li class="kod">sstagekle() </li> <p style="display: inline;">Bu Kod JS'deki document.createElement()'dir</p><br>
 <li class="kod">ssekle() </li> <p style="display: inline;">Bu Kod JS'deki appendChild()'dir</p><br>
@@ -268,13 +276,14 @@
 <li class="kod">ssata() </li> <p style="display: inline;">Bu Kod ile ssdeğişken'in değeri değiştirilir</p><br>
 <li class="kod">ssstilver() </li> <p style="display: inline;">Bu Kod JS'deki .style'dir</p><br>
 <li class="kod">sstikla() </li> <p style="display: inline;">Bu Kod ile sstagekle() ile button ekleyince o button'a tıklanınca olan şey gerçekleşir.</p><br>
-<li class="kod">sstagsil() </li> <p style="display: inline;">Bu Kod ile bir tag silinir.</p><br>
+<li class="kod">sstagsil() </li> <p style="display: inline;">Bu Kod JS'deki remove()'dur.</p><br>
 <li class="kod">sssor() </li> <p style="display: inline;">Bu Kod JS'deki prompt() kodudur.</p><br>
 <li class="kod">ssdöndür() </li> <p style="display: inline;">Bu Kod JS'deki return kodudur.</p><br>
 <li class="kod">ssvaktinde() </li> <p style="display: inline;">Bu Kod JS'deki SetTimeout() kodudur.</p><br>
 <li class="kod">sszamanlitekrar() </li> <p style="display: inline;">Bu Kod JS'deki SetInterval() kodudur.</p><br>
-<h4>Örnek kod: </h4> <hr>
+<h4>Örnek kodlar: </h4> <hr>
 <pre class="kod">
+bismillah
 ssdeğişken a = sstagekle("button");
 sshtmlver(a, "Tıkla");
 ssstilver(a, "background-color", "aqua");
@@ -288,7 +297,44 @@ sskontaekle(a);
 ssfonksiyon K(){
 ssuyar("Merhaba!");
 }
-</pre>
+elhamdülillah
+</pre> <hr>
+<pre class="kod">
+bismillah
+ssfonksiyon A(sayı){
+    ssdeğişken c = ssmatematik.karekök(sayı);
+    ssdeğişken c1 = ssmatematik.yuvarla(c);
+    ssdeğişken b = c1;
+ssdöndür b;
+}
+ssdeğişken sayi = A(25); >>25'i değiştirebilirsiniz.
+ssuyar(b);
+elhamdülillah
+</pre> <hr>
+<pre class="kod">
+bismillah
+ssfonksiyon B(){
+ssdeğişken iller = ⌞"İstanbul"→"İzmir"→"Ankara"→"Kocaeli"→"Bursa"→"Ordu"→"Sivas"→"Manisa"→"Trabzon"→"Edirne"→"Karabük"→"Erzincan"→"Burdur"→"Batman"⌝;
+ssdeğişken random1 = ssmatematik.rastgele();
+ssdeğişken illeruzunluk = sscetvel(iller);
+ssdeğişken random3 = random1 * illeruzunluk;
+ssdeğişken random2 = ssmatematik.yukari(random3);
+ssdeğişken random = random2 - 1;
+ssdeğişken secili = iller⌞random⌝;
+ssuyar(secili);
+}
+B();
+elhamdülillah
+</pre> <hr>
+<pre class="kod">
+bismillah
+ssdeğişken a = 0;
+ssdöngü(a < 10){
+ssata a = a + 1;
+    ssuyar(a);
+}
+elhamdülillah
+</pre> <hr>
 <p>ek bilgi: siz SeairScript'e güvenmeyin sağı solu belli olmaz eskiden ondalık dahi kabul etmiyordu .d ve seairscript kodu yazarken kafanızda direkt JS kodu yazıyor gibi düşünün.Ve SeairScript kodunu yada PHP kodunu burda yazamazsınız SeairScript için ancak o linke basın ordan kod yazabilirsiniz.Önerim her derle tuşuna iki kez basıp ikinci sonucu deneyin daha iyi olur.</p>
         </div>
     <div id="dnm">
