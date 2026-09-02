@@ -43,7 +43,8 @@
     <center>
     <h1 id="karsilama">Albarmaja Disce ile HTML,CSS,JS ve SeairScript'i basitçe öğrenin.</h1>
     <p id="cikanyazi">Albarmaja Disce ile HTML,CSS,JS,PHP ve SeairScript Öğrenin.Tamamen Ücretsiz ve Açık Kaynak Bir Yazılımdır.Basit şekilde yazılım anlatıyoruz ve bu sitede dolaşırken bir yandanda yazılım zor acaba başlamalımıyım sorusuna fark dahi edemeyeceğiniz şekilde cevap veriyoruz.</p> <!--yani yalan mı .d basit şekilde anlatıyoruz birkaç kaynakla daha destekleseler kolayca öğrenirler.-->
-    <h6>v0.8</h6>
+    <p>Haber: v1.0 sürümüne geçtik elhamdülillah.Buna özel sizin için bir kod yazdık en aşağıda.Ancak anlamak için bence ilk önce yazılım dillerini öğrenin.</p>
+    <h6>v1.0</h6>
     <button><a href="#ogrn">HTML Öğrenme</a></button>
     <button><a href="#etktl">Etiketler</a></button>
     <button><a href="#ornklr">Örnekler (HTML)</a></button>
@@ -187,6 +188,16 @@
             <li style="display: inline;"><= </li><p style="display: inline;">Küçük yada eşitse demek.</p><br>
             <li style="display: inline;">> </li><p style="display: inline;">Büyükse demek.</p><br>
             <li style="display: inline;">< </li><p style="display: inline;">Küçükse demek.</p><br>
+            <li style="display: inline;"><< ve >></li><p style="display: inline;">Bit kaydırma.</p><br>
+            <li style="display: inline;">^</li><p style="display: inline;">XOR</p><br>
+            <li style="display: inline;">~</li><p style="display: inline;">Bitwise NOT</p><br>
+            <li style="display: inline;">&</li><p style="display: inline;">Bitwise AND</p><br>
+            <li style="display: inline;">|</li><p style="display: inline;">Bitwise OR</p><br>
+            <li style="display: inline;">**</li><p style="display: inline;">üslü sayı</p><br>
+            <li style="display: inline;">**=</li><p style="display: inline;">üslü sayı atama</p><br>
+            <li style="display: inline;">||</li><p style="display: inline;">yada demek (if-else'te.)</p><br>
+            <li style="display: inline;">&&</li><p style="display: inline;">ve demek (if-else'te)</p><br>
+            <li style="display: inline;">%</li><p style="display: inline;">bilin siz yeter .d</p><br>
             <p>Kalanı inşAllah v.05'te çünkü kalanı daha çok if-else ile alakalı.</p><br>
             <p>Oyun Örneği: </p><br>
             <p class="kod" id="ornk9"></p>
@@ -227,16 +238,53 @@
             <p>bu kod sayesinde A() fonksiyonu tetiklendiğinde a id'li element yok olur.</p><hr>
             <p id="flornk" class="kod"></p> <hr>
             <p>bu kod sayesinde oyun tarzı birşey yaparsınız. eğer aşağıdaki alana yansıtmak istiyorsanız <button onclick="YNST()">bu butona</button> tıklayın.</p>
+            <h6>Döngüler: </h6>
+            <hr>
+            <li class="kod" title="while(kosul){tetiklenince olanlar}">while()</li><p style="display: inline;">Klasik döngü.Örnek: </p><br>
+            <pre class="kod">var a = 0;
+while(a < 5){
+    console.log(a);
+    a += 1;
+}
+</pre>
+<li class="kod" title="for(baslangic;kosul;o sürede olan seyler){tetiklenince olanlar}">for()</li><p style="display: inline;">Koşullu döngü.Örnek: </p><br>
+<pre class="kod">for(var i = 0;i < 5;i += 1;){
+    console.log(i);
+}
+</pre>
+<h6>Diziler ve Nesneler: </h6>
+<p>Diziler JavaScript'te [] ile olan şeylerdir.Veri tutmaya yarar.Örneğin şu şekilde olurlar: <pre class="kod">var a = ["elma", "armut", "şeftali"];</pre> gibi.Ordan bir değer almak içinse örneğin biz şu şekilde kod yazarız: a[0] (bu ilk elemanı alır.JS'de 0 ilk elemanı 1 ikinci elemanı alır.Yani şuan biz elma'yı aldık.)</p>
+<li class="kod">.push()</li><p style="display: inline;">En sona değer ekler örneğin: a.push("muz"); bu sayede en sona muz'da eklenir.</p><br>
+<li class="kod">.pop()</li><p style="display: inline;">En sondan çıkarılır.</p><br>
+<li class="kod">.unshift()</li><p style="display: inline;">En başa eklenir.</p><br>
+<li class="kod">.shift()</li><p style="display: inline;">En baştan çıkarılır.</p><br>
+<p>Nesneler: JavaScript'te {} ile olan JSON formatında yazılan şeylerdir.Örneğin: </p>
+<pre class="kod">var a = {
+    "site": "albarmaja disce",
+    "sürüm": 0.9,
+    "yıl": 2026
+};
+</pre>
+<li class="kod">.</li><p style="display: inline;">Evet... bu.Yani anlamadıysanız hani o dediğim şey vardıya örnekle anlatayayım: </p><br>
+<pre class="kod">var a = {
+    "site": "albarmaja disce",
+    "sürüm": 0.9,
+    "yıl": 2026
+};
+alert(a.site);
+</pre>
+<p>Burda bize şunu der: albarmaja disce.Anlamadıysanız . ile o içindeki şeye gidiyoruz ve onun değerini diyor.</p>
         </div>
         <div id="php">
             <h4>PHP: </h4>
 <h5>PHP Öğrenme</h5>
-<p>ufak bir bilgi:bende PHP'yi tam bilmiyorum .d</p>
+<p>ufak bir bilgi:bende PHP'yi tam bilmiyorum .d video izleyip öğrenmenizi öneririm.</p>
 <h5>PHP'den bazı kodlar: </h5>
 <li class="kod"><?php </li> <p style="display: inline;">Bu Kod İle PHP başlatılır.</p><br>
 <li class="kod">?> </li> <p style="display: inline;">Bu Kod İle PHP kapatılır.</p><br>
 <li class="kod">echo </li> <p style="display: inline;">Bu Kod İle yazı yazdırılır (örn. echo "Merhaba dünya"; bu sayede merhaba dünya yazar.).</p><br>
 <li class="kod">$ </li> <p style="display: inline;">Bunun yanına değişken vs. yazılır. (örn. $a = 6)</p><br>
+<li class="kod">$_POST[''] </li> <p style="display: inline;">bununla gelen POST verisi çekilir.</p><br>
 <p>Bu kadar bilgim var .d alın şuda kod olsun örnek: </p>
 <p class="kod">
     <?php <br>
@@ -250,58 +298,82 @@
         <div id="ss">
             <h4>SeairScript: </h4>
 <h5>SS (SeairScript) Öğrenme</h5>
-<p>SeairScript:JS ile derlenen bir yazılım dilidir.Ve JS'yi az çok bildiğinizi varsayıyorum.Linki: </p>
+<p>SeairScript:JS ile derlenen bir yazılım dilidir.Kapıkulu tarafından yapılmıştır.Ve JS'yi az çok bildiğinizi varsayıyorum.Linki: </p>
 <p>Ek olarak: SeairScript kodu bismillah ile başlayıp elhamdülillah ile bitmelidir.</p>
-<a href="https://turkum-webci.github.io/seairscriptv2.3/">SeairScript</a>
+<a href="https://turkum-webci.github.io/seairscriptv2.7/" title="seairscript sürümü: v2.7">SeairScript</a>
 <h5>SS'den bazı kodlar: </h5>
-<li class="kod">ssyazdır() </li> <p style="display: inline;">Bu Kod JS'deki console.log'dur.</p><br>
+<li class="kod">ssyazdır() </li> <p style="display: inline;">Bu Kod ile konsol'a yazı yazdırılır.</p><br>
 <li class="kod">ssuyar() </li> <p style="display: inline;">Bu Kod JS'deki alert()'dır.</p><br>
 <li class="kod">sseğer() </li> <p style="display: inline;">Bu Kod JS'deki if'dir.</p><br>
 <li class="kod">ssfonksiyon() </li> <p style="display: inline;">Bu Kod JS'deki function'dur.</p><br>
 <li class="kod">ssmatematik() </li> <p style="display: inline;">Bu Kod JS'deki Math'tir.(kullanımlarında ss ve türkçe adı olur yani random sayı için: ssmatematik.ssrastgele(); kullanılır.)</p><br>
 <li class="kod">ssdeğişken() </li> <p style="display: inline;">Bu Kod JS'deki var'dır</p><br>
-<li class="kod">ssdöngü() </li> <p style="display: inline;">Bu Kod JS'deki while'dır (yani döngü kodudur.)</p><br>
+<li class="kod">ssdöngü() </li> <p style="display: inline;">Bu Kod JS'deki while'dır</p><br>
 <li class="kod">sshtmlver() </li> <p style="display: inline;">Bu Kod JS'deki innerHTML'dır</p><br>
+<li class="kod" title="ssmetinver(element, yazı)">ssmetinver() </li> <p style="display: inline;">Bu Kod ile seçili element'e yazı verilir.</p><br>
+<li class="kod">ssstilyaz() </li> <p style="display: inline;">Bu Kod daha çok kütüphaneler içindir.Stil yazılır</p><br>
+<li class="kod">ssbaglantiyaat(link) </li> <p style="display: inline;">Bu Kod ile bir bağlantıya atılır</p><br>
+<li class="kod">ssgonder() </li> <p style="display: inline;">Bu Kod ile bir POST isteği gönderilir.</p><br>
+<li class="kod">ssgetir() </li> <p style="display: inline;">Bu Kod ile bir GET isteği gönderilir.</p><br>
+<li class="kod">ssdiziyeekle() </li> <p style="display: inline;">Bu Kod JS'deki .push'tur.</p><br>
+<li class="kod">ssdizidenkov() </li> <p style="display: inline;">Bu Kod JS'deki .pop'tur.</p><br>
 <li class="kod">sseğerinzıttı() </li> <p style="display: inline;">Bu Kod JS'deki else'dir</p><br>
-<li class="kod">ssdöndür </li> <p style="display: inline;">Bu Kod JS'deki return'dur</p><br>
+<li class="kod">ssdöndür </li> <p style="display: inline;">Bu Kod ile bir fonksiyon içinde bir değeri göndermektir.(biraz karmaşık oldu kısacası return kodudur.)</p><br>
 <li class="kod">ssdizinegir </li> <p style="display: inline;">Bu Kod ile dizine girilir.</p><br>
 <li class="kod">ssdiziyeekle </li> <p style="display: inline;">Bu Kod ile diziye birşey eklenir.</p><br>
 <li class="kod">ssdizidenkov </li> <p style="display: inline;">Bu Kod ile dizinin son elemanı çıkarılır.</p><br>
-<li class="kod">sscetvel </li> <p style="display: inline;">Bu Kod hem string'in uzunluğunu hemde dizinin uzunluğunu ölçer</p><br>
+<li class="kod">sscetvel() </li> <p style="display: inline;">Bu Kod hem string'in uzunluğunu hemde dizinin uzunluğunu ölçer</p><br>
 <li class="kod">sskovala/ssyakala </li> <p style="display: inline;">Bu Kod try ve catch'tir.</p><br>
-<li class="kod">ssdegercek() </li> <p style="display: inline;">Bu Kod JS'deki .value'dir</p><br>
+<li class="kod">ssdegercek() </li> <p style="display: inline;">Bu Kod bir input/textarea'dan String çeker.</p><br>
+<li class="kod">sssayicek() </li> <p style="display: inline;">Bu Kod bir input/textarea'dan sayı çeker.</p><br>
+<li class="kod">ssyeritekrarla(element/metin, eski değer, yeni değer) </li> <p style="display: inline;">Bu Kod ile bir element/metnin içindeki bir değeri ne diye değiştireceğimizi deriz (.replace).</p><br>
+<li class="kod">sskarakter() </li> <p style="display: inline;">Bu Kod ile bir metnin seçtiğimiz karakterini çeker.</p><br>
+<li class="kod">sssayiyacevir() </li> <p style="display: inline;">Bu Kod String'i Number'a çevirir.</p><br>
+<li class="kod">ssmetnecevir() </li> <p style="display: inline;">Bu Kod Number'ı String'e çevirir.</p><br>
+<li class="kod">ssunutma() </li> <p style="display: inline;">Bu Kod ile tarayıcı yeniden başlatılsa bile burdaki değeri unutmaz.</p><br>
+<li class="kod">sskaraeveri() </li> <p style="display: inline;">Bu Kod ile unutulmayan veri okunur.</p><br>
+<li class="kod">ssunut() </li> <p style="display: inline;">Bu Kod ile unutulmayan veri unutulur (localStorage işte o kadar kendimi yırttım boşuna .d).</p><br>
+<li class="kod">sstipebak() </li> <p style="display: inline;">Bu Kod ile tipe bakılır (şaka yaptım .d JS'deki typeof kodu bu.).</p><br>
 <li class="kod">sstagekle() </li> <p style="display: inline;">Bu Kod JS'deki document.createElement()'dir</p><br>
 <li class="kod">ssekle() </li> <p style="display: inline;">Bu Kod JS'deki appendChild()'dir</p><br>
 <li class="kod">sskontaekle() </li> <p style="display: inline;">Bu Kod JS'deki document.getElementById("kont1").appendChild()'dir (yani kont1 id'li div'e ekliyor o div sandbox div'i)</p><br>
 <li class="kod">ssata() </li> <p style="display: inline;">Bu Kod ile ssdeğişken'in değeri değiştirilir</p><br>
 <li class="kod">ssstilver() </li> <p style="display: inline;">Bu Kod JS'deki .style'dir</p><br>
-<li class="kod">sstikla() </li> <p style="display: inline;">Bu Kod ile sstagekle() ile button ekleyince o button'a tıklanınca olan şey gerçekleşir.</p><br>
+<li class="kod">sstikla(buton, fonksiyon) </li> <p style="display: inline;">Bu Kod ile sstagekle() ile button ekleyince o button'a tıklanınca olan şey gerçekleşir.</p><br>
 <li class="kod">sstagsil() </li> <p style="display: inline;">Bu Kod JS'deki remove()'dur.</p><br>
 <li class="kod">sssor() </li> <p style="display: inline;">Bu Kod JS'deki prompt() kodudur.</p><br>
-<li class="kod">ssdöndür() </li> <p style="display: inline;">Bu Kod JS'deki return kodudur.</p><br>
 <li class="kod">ssvaktinde() </li> <p style="display: inline;">Bu Kod JS'deki SetTimeout() kodudur.</p><br>
 <li class="kod">sszamanlitekrar() </li> <p style="display: inline;">Bu Kod JS'deki SetInterval() kodudur.</p><br>
+<li class="kod">sskırp() </li> <p style="display: inline;">Bu Kod ile boşluklar atılır (diye hatırlıyorum).</p><br>
+<li class="kod">ssparcala() </li> <p style="display: inline;">Bu Kod ile while bitirilir.</p><br>
+<li class="kod">ssnesne() </li> <p style="display: inline;">Bu Kod ile nesne oluşturulur.</p><br>
+<li class="kod">ssduzenliara() </li> <p style="display: inline;">Bu Kod regex'tir.Yani nasıl anlatacağımı bilmiyorum regex kodlarını attım.</p><br>
+<li class="kod">ssduzenlidegistir() </li> <p style="display: inline;">Bu Kodda regex.</p><br>
+<li class="kod">ssyukle() </li> <p style="display: inline;">Bu Kod ile kütüphane yüklenir (örn: https://turkum-webci.github.io/sskutuphaneler/random.seairsc).</p><br>
 <h4>Örnek kodlar: </h4> <hr>
 <pre class="kod">
 bismillah
-ssdeğişken a = sstagekle("button");
-sshtmlver(a, "Tıkla");
-ssstilver(a, "background-color", "aqua");
-ssstilver(a, "width", "80px");
-ssstilver(a, "height", "40px");
-ssstilver(a, "border-radius", "20px");
-ssstilver(a, "border", "3px solid");
-ssstilver(a, "cursor", "pointer");
-sstikla(a, K);
-sskontaekle(a);
-ssfonksiyon K(){
-ssuyar("Merhaba!");
-}
+ssyukle("https://raw.githubusercontent.com/Turkum-Webci/sipah/refs/heads/main/dizi.seairsc");
+ssdeğişken abj = ⌞0→1→2→3→4→5→6→7→8→9⌝; >>:) sözdizimi çok güzel değilmi dizilerin sözdizimi.birde bu yorum satırı. >> ile oluyor.
+ssdeğişken abc = sipahdiziters(abj);
+ssdeğişken div = sstagekle("div");
+ssstilver(div, "width", "100%");
+ssstilver(div, "height", "400px");
+ssstilver(div, "background-color", "black");
+ssstilver(div, "color", "red");
+ssstilver(div, "border", "3px solid red");
+sshtmlver(div, abc);
+sskontaekle(div);
+>>öylesine kodlar:
+ssyazdır("Selamun Aleyküm SeairScript!");
+ssuyar("ssuyar");
+ssdeğişken c = ssmatematik.rastgele();
+ssuyar(c);
 elhamdülillah
 </pre> <hr>
 <pre class="kod">
 bismillah
-ssfonksiyon A(sayı){
+ssfonksiyon A(sayı){ >>bu parametreli fonksiyondur.
     ssdeğişken c = ssmatematik.karekök(sayı);
     ssdeğişken c1 = ssmatematik.yuvarla(c);
     ssdeğişken b = c1;
@@ -331,15 +403,36 @@ bismillah
 ssdeğişken a = 0;
 ssdöngü(a < 10){
 ssata a = a + 1;
-    ssuyar(a);
+ssuyar(a);
 }
 elhamdülillah
 </pre> <hr>
-<p>ek bilgi: siz SeairScript'e güvenmeyin sağı solu belli olmaz eskiden ondalık dahi kabul etmiyordu .d ve seairscript kodu yazarken kafanızda direkt JS kodu yazıyor gibi düşünün.Ve SeairScript kodunu yada PHP kodunu burda yazamazsınız SeairScript için ancak o linke basın ordan kod yazabilirsiniz.Önerim her derle tuşuna iki kez basıp ikinci sonucu deneyin daha iyi olur.</p>
+<h6>SS Operatörler: </h6> <hr>
+<p style="display: inline;">
+#^# XOR <br>
+#&# Bitwise And <br>
+◂_₺ sola kaydır <br>
+▸_₺ sağa kaydır <br>
+!◂_₺ hiçbirşey yapmaz (troll) <br>
+~ bitwise NOT <br>
+^* üs <br>
+..# tüm bitwise işlemlerini yapar. <br>
+..* bir metni kaç kez tekrar edeceğini söyler. <br>
+_₺_ metnin tüm karakterlerini ayrı değerlendirir <br>
+.d metni diziye dönüştürür (hayır o ".d" değil bu operatör birde gülücük anlamında ".d" var.) <br>
+]_([- (böyleydi galiba) bu bir metinin bir kısmını çıkarır. <br>
+kalanı JS'dekiler falan bunlar farklı olanlar.He birde (**) var yani isnanetip.Hadi kolay gelsin diyelim.
+</p>
+<h5>SS Kütüphaneler: </h5> <hr>
+<h6>Sipah Matematik Kütüphanesi: </h6>
+<p>sipahortalama() bu kod iki değerin ortalamasını verir</p>
+<p>sipahortalama_dizi() dizinin ortalamasını verir.</p>
+<!--kalanını yazacağım inşAllah.-->
+<p>ek bilgi: siz SeairScript'e güvenmeyin sağı solu belli olmaz eskiden ondalık dahi kabul etmiyordu .d ve seairscript kodu yazarken kafanızda direkt JS kodu yazıyor gibi düşünün.Ve SeairScript kodunu yada PHP kodunu burda yazamazsınız SeairScript için ancak o linke basın ordan kod yazabilirsiniz.Önerim yorumla tuşu ile sonucu deneyin daha iyi olur.Ek olarak SeairScript'in çoğu özelliğini anlatamadım.Siz anlayın diyeceğim anlayamazsınız o yüzden yapacağınız şey sizin en iyisi SeairScript'i gelin bir dosyasını indirin (yanlış hatırlamıyorsam firefox'ta sağ tık dosyayı indir gibi birşey var.) ordan bir AI'a da sorun o dosyayı.</p>
         </div>
     <div id="dnm">
         <h3>Sıra Sende! Şimdi sen öğrendiklerin ile bir kod yaz!</h3>
-        <textarea name="" id="kd" placeholder="Buraya Kod Yazıcaksın."></textarea> <hr>
+        <textarea name="" id="kd" placeholder="Buraya Kod Yazıcaksın.">alert("v1.0");</textarea> <hr>
         <button onclick="A()">Kodu Gönder ve Test Et!</button> <hr>
         <iframe src="" frameborder="1" width="100%" height="400" id="iframe1"></iframe>
     </div>
@@ -379,10 +472,10 @@ elhamdülillah
         d.getElementById("etkt7").textContent = "<marquee>";
         d.getElementById("ornk1").innerText = "<!DOCTYPE html>\n<head>\n<title>Yazı Örneği</title>\n</head>\n<body>\n<p>Albarmaja Disce</p>\n</body>\n</html>";
         d.getElementById("snc1").innerHTML = "<!DOCTYPE html>\n<head>\n<title>Yazı Örneği</title>\n</head>\n<body>\n<p>Albarmaja Disce</p>\n</body>\n</html>";
-        d.getElementById("ornk2").innerText = '<!DOCTYPE html>\n<head>\n<title>Resim Örneği</title>\n</head>\n<body>\n<p>Resim: </p>\n <img src="resim2.png"></img>\n</body>\n</html>';
-        d.getElementById("snc2").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Resim Örneği</title>\n</head>\n<body>\n<p>Resim: </p>\n <img src="resim2.png"></img>\n</body>\n</html>';
-        d.getElementById("ornk3").innerText = '<!DOCTYPE html>\n<head>\n<title>Sayfa İçinde Sayfa Örneği</title>\n</head>\n<body>\n<p>Vikipedi: </p>\n <iframe src="https://tr.wikipedia.org/"></img>\n</body>\n</html>';
-        d.getElementById("snc3").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Sayfa İçinde Sayfa Örneği</title>\n</head>\n<body>\n<p>Vikipedi: </p>\n <iframe src="https://tr.wikipedia.org/"></img>\n</body>\n</html>';
+        d.getElementById("ornk2").innerText = '<!DOCTYPE html>\n<head>\n<title>Resim Örneği</title>\n</head>\n<body>\n<p>Resim: </p>\n <img src="resim2.png">\n</body>\n</html>';
+        d.getElementById("snc2").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Resim Örneği</title>\n</head>\n<body>\n<p>Resim: </p>\n <img src="resim2.png">\n</body>\n</html>';
+        d.getElementById("ornk3").innerText = '<!DOCTYPE html>\n<head>\n<title>Sayfa İçinde Sayfa Örneği</title>\n</head>\n<body>\n<p>Vikipedi: </p>\n <iframe src="https://tr.wikipedia.org/">\n</body>\n</html>';
+        d.getElementById("snc3").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Sayfa İçinde Sayfa Örneği</title>\n</head>\n<body>\n<p>Vikipedi: </p>\n <iframe src="https://tr.wikipedia.org/">\n</body>\n</html>';
         d.getElementById("ornk4").innerText = '<!DOCTYPE html>\n<head>\n<title>Link Örneği</title>\n</head>\n<body>\n<p>Link: </p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n</body>\n</html>';
         d.getElementById("snc4").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Link Örneği</title>\n</head>\n<body>\n<p>Link: </p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n</body>\n</html>';
         d.getElementById("ornk5").innerText = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar Örneği</title>\n</head>\n<body>\n<p><u>Link: </u></p>\n <a href="https://tr.wikipedia.org/">Vikipedi</a>\n<textarea></textarea>\n<button>Bas!</button>\n<input type="number">\n<img src="resim2.png">\n<iframe src="wikpedia.org">\n<h1><marquee>Dönen Başlık</marquee></h1>\n</body>\n</html>';
@@ -390,8 +483,8 @@ elhamdülillah
         d.getElementById("ornk6").innerText = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar (CSS) Örneği</title>\n<style>\n#div{\ncolor: red;\nbackground-color: blue;\nwidth: 100px;\nheight: 80px;\nborder-radius: 10px;\n</style>\n</head>\n<body>\n<p id="div">Merhaba Dünya!</p>\n</body>\n</html>';
         d.getElementById("snc6").innerHTML = '<!DOCTYPE html>\n<head>\n<title>Tüm Kodlar (CSS) Örneği</title>\n<style>\n#div{\ncolor: red;\nbackground-color: blue;\nwidth: 100px;\nheight: 80px;\nborder-radius: 10px;\n</style>\n</head>\n<body>\n<p id="div">Merhaba Dünya!</p>\n</body>\n</html>';
         d.getElementById("ornk7").innerText = 'document.getElementById("div1").innerHTML = "<p>Merhaba Bu Bir Örnektir</p><br><p>Hoşgeldiniz</p>";';
-        d.getElementById("ornk8").innerText = '<!DOCTYPE html>\n<head>\n<title>JavaScript Fonksiyon Örneği</title>\n</head>\n<body>\n<p id="yazi1">1</p>\n<button onclick="iki()">Bas!</button>\n<script>\nfunction iki(){\ndocument.getElementById("yazi1").innerText = "2";\n}\n//<scrip yazdım çünkü t> yazılamıyor maalesef siz var gibi düşünün \n</scrip\n</body>\n</html>';
-        d.getElementById("ornk9").innerText = '<!DOCTYPE html>\n<head>\n<title>Oyun Örneği</title>\n</head>\n<body>\n<p id="yazi2">1</p>\n<button onclick="uc()">Bas!</button>\n<script>\nvar puan = 1;\nfunction uc(){\npuan +=1 ;\ndocument.getElementById("yazi2").innerText = puan;\n}\n//<scrip yazdım çünkü t> yazılamıyor maalesef siz var gibi düşünün \n</scrip\n</body>\n</html>';
+        d.getElementById("ornk8").innerText = '<!DOCTYPE html>\n<head>\n<title>JavaScript Fonksiyon Örneği</title>\n</head>\n<body>\n<p id="yazi1">1</p>\n<button onclick="iki()">Bas!</button>\n<script>\nfunction iki(){\ndocument.getElementById("yazi1").innerText = "2";\n}\n\</script>\n</body>\n</html>';
+        d.getElementById("ornk9").innerText = '<!DOCTYPE html>\n<head>\n<title>Oyun Örneği</title>\n</head>\n<body>\n<p id="yazi2">1</p>\n<button onclick="uc()">Bas!</button>\n<script>\nvar puan = 1;\nfunction uc(){\npuan +=1 ;\ndocument.getElementById("yazi2").innerText = puan;\n}\n\</script></body>\n</html>';
         d.getElementById("flornk").textContent = '<!DOCTYPE html>\n<html lang="tr">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>Oyun Örneği</title>\n<style>#oly1,#oly2,#oly3{display:none;}</style>\n</head>\n<body>\n<p id="p">Puan: 1</p>\n<div id="oly1">\n<p>Olay: Puanın 3 artacak</p>\n<button onclick="P3()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<div id="oly2">\n<p>Olay: Puanın 1 düşücek ancak buna 3 kez basınca puanın 5 artacak</p>\n<button onclick="P1()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<div id="oly3">\n<p>Olay: Puanın 100 düşücek ancak buna basınca her 250 milisaniyede puanın 1 artacak</p>\n<button onclick="P100()">Tamam</button>\n<button onclick="HYR()">Hayır</button>\n</div>\n<script>\nvar p=1,pa=0,o="evt",pha="yk";\nsetInterval(function(){\nif(o=="evt"){\no="yk";\nvar r=Math.floor(Math.random()*3)+1;\ndocument.getElementById("oly"+r).style.display="block";\n}\nif(p>=3000){alert("Kazandın! Tebrik ederim.");}\nelse if(p<0){alert("Kaybettin");}\nif(pa>=3){pa=0;p+=5;document.getElementById("p").innerHTML="Puan: "+p;}\n},10000);\nfunction P3(){p+=3;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly1").style.display="none";}\nfunction HYR(){o="evt";document.getElementById("oly1").style.display="none";document.getElementById("oly2").style.display="none";document.getElementById("oly3").style.display="none";}\nfunction P1(){pa+=1;p-=1;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly2").style.display="none";}\nfunction P100(){pha="evt";p-=100;document.getElementById("p").innerHTML="Puan: "+p;o="evt";document.getElementById("oly3").style.display="none";}\nsetInterval(function(){if(pha=="evt"){p+=1;document.getElementById("p").innerHTML="Puan: "+p;}},250);\n<\/script>\n</body>\n</html>';
         function A(){
             d.getElementById("iframe1").srcdoc = d.getElementById("kd").value;
